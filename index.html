@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Snake Game</h1>
+  </header>
+  <main class="body">
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" class="modal">
+      <div class="modal-content">
+        <h2>Game Over!</h2>
+        <div id="scoreBoard">
+          <div id="finalScore">Score: 0</div>
+          <div id="highScoreDisplay">High Score: 0</div>
+        </div>
+        <button id="restartButton">Play Again</button>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+
+    <!-- Live Score Display -->
+    <div id="liveScore">Score: 0</div>
+
+    <!-- Game Board -->
+    <div id="board"></div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
